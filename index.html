@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEN University | Tu Futuro Comienza Aquí</title>
+    <meta name="description" content="Estudia en ADEN University en Torre de las Américas, Panamá. Programas presenciales y online con doble titulación internacional.">
+    <link rel="icon" href="https://mkt-landings.adenuniversity.edu.pa/wp-content/uploads/2023/06/cropped-favicon-32x32.webp" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --red: #B31D15;
+            --red-hover: #9E1B15;
+            --dark: #1D1D18;
+            --gray: #666666;
+            --light-gray: #F5F5F5;
+            --white: #ffffff;
+            --black: #000000;
+            --radius: 8px;
+            --radius-lg: 16px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.12);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--red); text-decoration: none; }
+        a:hover { color: var(--red-hover); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ========================================
+           ZONA 1 — HERO / ABOVE THE FOLD
+           ======================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.6)),
+                        url('https://mkt-landings.adenuniversity.edu.pa/wp-content/uploads/landing-mixta.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 60px;
+        }
+
+        .hero-logo {
+            position: absolute;
+            top: 28px;
+            left: 32px;
+            width: 200px;
+            z-index: 10;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .hero-text h1 span {
+            color: #F5C242;
+        }
+
+        .hero-text p {
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 300;
+            opacity: 0.92;
+            max-width: 520px;
+            line-height: 1.5;
+        }
+
+        /* Form Card */
+        .form-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.25);
+            color: var(--dark);
+        }
+
+        .form-card h3 {
+            color: var(--red);
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-card select,
+        .form-card input[type="text"],
+        .form-card input[type="email"],
+        .form-card input[type="tel"] {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #ccc;
+            border-radius: var(--radius);
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: var(--dark);
+            background: var(--white);
+            transition: border-color 0.2s;
+        }
+
+        .form-card select:focus,
+        .form-card input:focus {
+            outline: none;
+            border-color: var(--red);
+        }
+
+        .form-card .btn-cta {
+            width: 100%;
+            padding: 14px;
+            background: var(--red);
+            color: var(--white);
+            border: none;
+            border-radius: 30px;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.3s;
+            margin-top: 4px;
+        }
+
+        .form-card .btn-cta:hover {
+            background: var(--red-hover);
+        }
+
+        .form-card .privacy {
+            font-size: 11px;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 12px;
+            line-height: 1.4;
+        }
+
+        /* Sellos de calidad */
+        .sellos {
+            background: var(--dark);
+            padding: 20px 0;
+        }
+
+        .sellos .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .sello-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--white);
+        }
+
+        .sello-item svg {
+            width: 36px;
+            height: 36px;
+            fill: #F5C242;
+            flex-shrink: 0;
+        }
+
+        .sello-item span {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ========================================
+           ZONA 2 — PROPUESTA DE VALOR
+           ======================================== */
+        .propuesta {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .propuesta .section-title {
+            text-align: center;
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 900;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .propuesta .section-subtitle {
+            text-align: center;
+            font-size: 17px;
+            color: var(--gray);
+            max-width: 640px;
+            margin: 0 auto 48px;
+        }
+
+        .propuesta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36px;
+        }
+
+        .propuesta-card {
+            text-align: center;
+            padding: 36px 24px;
+            border-radius: var(--radius-lg);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .propuesta-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .propuesta-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            background: #FDF0F0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .propuesta-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--red);
+        }
+
+        .propuesta-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .propuesta-card p {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* ========================================
+           ZONA 3 — PRUEBA SOCIAL NUMÉRICA
+           ======================================== */
+        .stats {
+            background: var(--red);
+            padding: 56px 0;
+            color: var(--white);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-item p {
+            font-size: 15px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ZONA 4 — DETALLES DEL PROGRAMA
+           ======================================== */
+        .programa {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .programa .section-title {
+            text-align: center;
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+
+        .programa .section-subtitle {
+            text-align: center;
+            font-size: 17px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .programa-intro {
+            max-width: 800px;
+            margin: 0 auto 36px;
+            text-align: center;
+        }
+
+        .programa-intro p {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .competencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 24px auto 40px;
+            max-width: 800px;
+        }
+
+        .competencia-tag {
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 18px 24px;
+            background: var(--white);
+            border: none;
+            text-align: left;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .accordion-header:hover {
+            background: #fafafa;
+        }
+
+        .accordion-header .icon {
+            font-size: 20px;
+            font-weight: 300;
+            transition: transform 0.3s;
+            color: var(--red);
+        }
+
+        .accordion-item.active .accordion-header .icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .accordion-body-inner {
+            padding: 0 24px 20px;
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .accordion-body-inner ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .accordion-body-inner ul li {
+            margin-bottom: 6px;
+        }
+
+        /* ========================================
+           ZONA 5 — TESTIMONIOS
+           ======================================== */
+        .testimonios {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .testimonios .section-title {
+            text-align: center;
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .testimonio-card {
+            background: var(--light-gray);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonio-card::before {
+            content: '\201C';
+            font-size: 60px;
+            color: var(--red);
+            line-height: 1;
+            display: block;
+            margin-bottom: 4px;
+            font-family: Georgia, serif;
+        }
+
+        .testimonio-card blockquote {
+            font-size: 15px;
+            color: var(--gray);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .testimonio-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            background: var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .testimonio-card .name {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--dark);
+        }
+
+        .testimonio-card .role {
+            font-size: 13px;
+            color: var(--gray);
+            margin-top: 2px;
+        }
+
+        .testimonio-card .country {
+            font-size: 13px;
+            color: var(--red);
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        .logos-empresas {
+            text-align: center;
+        }
+
+        .logos-empresas p {
+            font-size: 14px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .logos-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            opacity: 0.5;
+        }
+
+        .logos-row span {
+            font-size: 22px;
+            font-weight: 900;
+            color: var(--dark);
+            letter-spacing: 1px;
+        }
+
+        /* ========================================
+           ZONA 6 — FAQ
+           ======================================== */
+        .faq {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .faq .section-title {
+            text-align: center;
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        /* ========================================
+           ZONA 7 — CTA FINAL
+           ======================================== */
+        .cta-final {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--dark) 0%, #2a2a24 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-final h2 {
+            font-size: clamp(24px, 3.5vw, 40px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .cta-final .urgencia {
+            font-size: 18px;
+            color: #F5C242;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .cta-final .form-card {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* ========================================
+           ZONA 8 — FOOTER
+           ======================================== */
+        .footer {
+            background: var(--black);
+            padding: 32px 0;
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-logo {
+            width: 160px;
+            opacity: 0.9;
+        }
+
+        .footer-info {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .footer-info span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-info svg {
+            width: 16px;
+            height: 16px;
+            fill: rgba(255,255,255,0.7);
+            flex-shrink: 0;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 992px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text p { margin: 0 auto; }
+
+            .form-card { max-width: 480px; margin: 0 auto; }
+
+            .propuesta-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+            .testimonios-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto 48px; }
+        }
+
+        @media (max-width: 600px) {
+            .hero { padding: 80px 0 40px; }
+            .hero-logo { width: 150px; top: 20px; left: 20px; }
+            .sellos .container { gap: 24px; }
+            .sello-item span { font-size: 11px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+            .footer .container { flex-direction: column; text-align: center; }
+            .footer-info { flex-direction: column; gap: 12px; }
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================
+     ZONA 1 — HERO / ABOVE THE FOLD
+     ============================================ -->
+<section class="hero">
+    <img src="https://test-mkt-landings.adenuniversity.edu.pa/wp-content/uploads/02_LOGO-ADEN-UNIVERSITY_horiz_negat2-e1775047145799-1024x385.png"
+         alt="ADEN University" class="hero-logo">
+
+    <div class="container">
+        <div class="hero-text">
+            <h1>Transforma Tu Carrera <span>Desde Panamá</span></h1>
+            <p>Formación práctica con doble titulación internacional. Estudia presencial u online con profesores que lideran empresas reales en Latinoamérica.</p>
+        </div>
+
+        <div class="form-card" id="form-top">
+            <h3>Solicita Información Ahora</h3>
+            <form id="lead-form-top" action="https://landings.aden.org/html2019/process/" method="POST">
+                <select name="programa" required>
+                    <option value="" disabled selected>Selecciona un programa</option>
+                    <optgroup label="Licenciaturas Online">
+                        <option value="Business Analytics">Business Analytics</option>
+                        <option value="Marketing y Comunicación Digital">Marketing y Comunicación Digital</option>
+                        <option value="Administración de Empresas">Administración de Empresas</option>
+                        <option value="Dirección de Finanzas">Dirección de Finanzas</option>
+                        <option value="Ingeniería Comercial">Ingeniería Comercial</option>
+                        <option value="Negocios Digitales">Negocios Digitales, Emprendimiento e Innovación</option>
+                        <option value="Logística y Comercio Internacional">Logística y Comercio Internacional</option>
+                        <option value="Recursos Humanos">Recursos Humanos</option>
+                        <option value="Contabilidad y Auditoría">Contabilidad y Auditoría</option>
+                    </optgroup>
+                    <optgroup label="Licenciaturas Presencial">
+                        <option value="Marketing y Comunicación Digital (Presencial)">Marketing y Comunicación Digital</option>
+                        <option value="Logística y Comercio Internacional (Presencial)">Logística y Comercio Internacional</option>
+                        <option value="Administración de Empresas (Presencial)">Administración de Empresas</option>
+                        <option value="Negocios Digitales (Presencial)">Negocios Digitales</option>
+                        <option value="Dirección de Finanzas (Presencial)">Dirección de Finanzas</option>
+                        <option value="Ingeniería Comercial (Presencial)">Ingeniería Comercial</option>
+                    </optgroup>
+                </select>
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="particular" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono (con código de país)" required>
+                <button type="submit" class="btn-cta">Quiero Información Ya</button>
+                <p class="privacy">Al enviar, aceptas nuestra <a href="https://adenuniversity.edu.pa/wp-content/uploads/Politica-de-privacidad-ADEN.pdf" target="_blank">Política de Privacidad</a>.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Franja de sellos -->
+<div class="sellos">
+    <div class="container">
+        <div class="sello-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            <span>Acreditación Internacional</span>
+        </div>
+        <div class="sello-item">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <span>Avalada por MEDUCA</span>
+        </div>
+        <div class="sello-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <span>Doble Titulación</span>
+        </div>
+        <div class="sello-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+            <span>Validez en 11 Países</span>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+     ZONA 2 — PROPUESTA DE VALOR
+     ============================================ -->
+<section class="propuesta">
+    <div class="container">
+        <h2 class="section-title fade-up">¿Por Qué Elegir ADEN University?</h2>
+        <p class="section-subtitle fade-up">Una educación diseñada para el mundo real, con conexiones globales y profesores que practican lo que enseñan.</p>
+
+        <div class="propuesta-grid">
+            <div class="propuesta-card fade-up">
+                <div class="propuesta-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+                </div>
+                <h4>Del Aula al Mundo Real</h4>
+                <p>Traslada el conocimiento directamente al entorno profesional con metodologías basadas en casos reales de empresas latinoamericanas.</p>
+            </div>
+
+            <div class="propuesta-card fade-up">
+                <div class="propuesta-icon">
+                    <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                </div>
+                <h4>Networking Global</h4>
+                <p>Conecta con una red de +30,000 profesionales en 11 países. Tu próximo socio de negocios podría estar en tu misma clase.</p>
+            </div>
+
+            <div class="propuesta-card fade-up">
+                <div class="propuesta-icon">
+                    <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                </div>
+                <h4>Aprender Haciendo</h4>
+                <p>Metodología práctica desde el primer día. Resuelve desafíos empresariales reales, no solo teoría, con proyectos aplicados en cada módulo.</p>
+            </div>
+
+            <div class="propuesta-card fade-up">
+                <div class="propuesta-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                </div>
+                <h4>Profesores con Experiencia Real</h4>
+                <p>Docentes que ocupan cargos gerenciales en empresas líderes. Aprende de quienes toman decisiones de negocio a diario.</p>
+            </div>
+
+            <div class="propuesta-card fade-up">
+                <div class="propuesta-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                </div>
+                <h4>Doble Titulación Internacional</h4>
+                <p>Obtén un título panameño avalado por MEDUCA y uno internacional, válido en toda Latinoamérica. Tu pasaporte profesional sin fronteras.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 3 — PRUEBA SOCIAL NUMÉRICA
+     ============================================ -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item fade-up">
+                <h3 data-target="30000">+30,000</h3>
+                <p>Egresados en Latinoamérica</p>
+            </div>
+            <div class="stat-item fade-up">
+                <h3>11</h3>
+                <p>Países con presencia</p>
+            </div>
+            <div class="stat-item fade-up">
+                <h3>20+</h3>
+                <p>Años formando líderes</p>
+            </div>
+            <div class="stat-item fade-up">
+                <h3>+4,000</h3>
+                <p>Estudiantes activos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 4 — DETALLES DEL PROGRAMA
+     ============================================ -->
+<section class="programa">
+    <div class="container">
+        <h2 class="section-title fade-up">Conoce Nuestros Programas</h2>
+        <p class="section-subtitle fade-up">Carreras diseñadas para el profesional que quiere liderar, no solo cumplir.</p>
+
+        <div class="programa-intro fade-up">
+            <p>Nuestros programas combinan visión estratégica con habilidades prácticas que el mercado laboral demanda hoy. Cada plan de estudios ha sido desarrollado junto a líderes empresariales de la región.</p>
+        </div>
+
+        <div class="competencias fade-up">
+            <span class="competencia-tag">Liderazgo Estratégico</span>
+            <span class="competencia-tag">Transformación Digital</span>
+            <span class="competencia-tag">Gestión Financiera</span>
+            <span class="competencia-tag">Marketing Global</span>
+            <span class="competencia-tag">Innovación & Emprendimiento</span>
+            <span class="competencia-tag">Comercio Internacional</span>
+            <span class="competencia-tag">Analítica de Negocios</span>
+        </div>
+
+        <div class="accordion fade-up" id="accordion-programa">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Plan de Estudios
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        <p>Un currículum integrado que combina fundamentos de negocio con especialización progresiva:</p>
+                        <ul>
+                            <li>Ciclo Básico: Fundamentos de gestión, economía aplicada, pensamiento analítico</li>
+                            <li>Ciclo Profesional: Especialización en tu área elegida con proyectos reales</li>
+                            <li>Ciclo de Integración: Proyecto final aplicado a una empresa real + práctica profesional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Duración y Modalidad
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        <ul>
+                            <li><strong>Duración:</strong> 3 años (formato acelerado por trimestres)</li>
+                            <li><strong>Modalidad presencial:</strong> Clases en Torre de las Américas, Panamá — horarios compatibles con trabajo</li>
+                            <li><strong>Modalidad online:</strong> Plataforma virtual 24/7 con clases sincrónicas semanales</li>
+                            <li><strong>Formato híbrido:</strong> Combina presencial y virtual según tu agenda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Perfil de Egreso
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        <p>Al graduarte, estarás capacitado para asumir roles como:</p>
+                        <ul>
+                            <li>Director de operaciones o gerente general en empresas nacionales e internacionales</li>
+                            <li>Consultor estratégico en transformación digital y gestión del cambio</li>
+                            <li>Emprendedor con herramientas reales para lanzar y escalar negocios</li>
+                            <li>Líder de equipos multiculturales en entornos corporativos globales</li>
+                            <li>Especialista en análisis de datos para la toma de decisiones gerenciales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Salidas Profesionales
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        <p>Nuestros egresados trabajan en las principales empresas de la región en sectores como:</p>
+                        <ul>
+                            <li>Banca y finanzas — análisis de inversión, gestión de riesgos, planificación financiera</li>
+                            <li>Tecnología — gestión de productos digitales, e-commerce, transformación digital</li>
+                            <li>Logística y comercio — cadena de suministro, comercio exterior, operaciones</li>
+                            <li>Marketing y comunicación — estrategia digital, branding, growth marketing</li>
+                            <li>Consultoría — estrategia corporativa, desarrollo organizacional, mejora de procesos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 5 — TESTIMONIOS
+     ============================================ -->
+<section class="testimonios">
+    <div class="container">
+        <h2 class="section-title fade-up">Lo Que Dicen Nuestros Egresados</h2>
+
+        <div class="testimonios-grid">
+            <div class="testimonio-card fade-up">
+                <blockquote>"ADEN me dio las herramientas para dar el salto de analista a gerente en menos de dos años. La red de contactos que construí fue invaluable."</blockquote>
+                <div class="testimonio-avatar">MC</div>
+                <p class="name">María Castillo</p>
+                <p class="role">Gerente de Operaciones — Copa Airlines</p>
+                <p class="country">Panamá 🇵🇦</p>
+            </div>
+
+            <div class="testimonio-card fade-up">
+                <blockquote>"La doble titulación me abrió puertas en Colombia y Panamá. Los profesores no solo enseñan, comparten su experiencia real de negocios."</blockquote>
+                <div class="testimonio-avatar">AR</div>
+                <p class="name">Andrés Rodríguez</p>
+                <p class="role">Director Comercial — Banco General</p>
+                <p class="country">Colombia 🇨🇴</p>
+            </div>
+
+            <div class="testimonio-card fade-up">
+                <blockquote>"Estudiar en ADEN mientras trabajaba fue posible gracias a sus horarios flexibles. Hoy lidero un equipo de 25 personas en la región."</blockquote>
+                <div class="testimonio-avatar">LP</div>
+                <p class="name">Laura Pérez</p>
+                <p class="role">VP de Marketing — Grupo ASSA</p>
+                <p class="country">Rep. Dominicana 🇩🇴</p>
+            </div>
+        </div>
+
+        <div class="logos-empresas fade-up">
+            <p>Nuestros egresados trabajan en</p>
+            <div class="logos-row">
+                <span>COPA AIRLINES</span>
+                <span>BANCO GENERAL</span>
+                <span>DELL</span>
+                <span>GRUPO ASSA</span>
+                <span>NESTLÉ</span>
+                <span>CATERPILLAR</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 6 — FAQ
+     ============================================ -->
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title fade-up">Preguntas Frecuentes</h2>
+
+        <div class="accordion fade-up" id="accordion-faq">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿El título tiene validez internacional?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        Sí. Obtienes una doble titulación: un título panameño avalado por MEDUCA (Ministerio de Educación de Panamá), con validez en toda la región, y un título internacional respaldado por la red ADEN presente en 11 países de Latinoamérica. Ambos títulos son apostillables para su uso en el extranjero.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Puedo estudiar mientras trabajo?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        Absolutamente. Nuestros programas están diseñados para profesionales activos. La modalidad online ofrece clases sincrónicas en horario nocturno y contenido disponible 24/7. La modalidad presencial tiene horarios vespertinos y de fin de semana en Torre de las Américas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Cuál es el proceso de admisión?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        El proceso es sencillo: completa el formulario de esta página, un asesor académico te contactará para orientarte sobre el programa ideal para ti, presenta tu documentación (diploma de bachillerato, cédula, notas) y formaliza tu inscripción. No hay examen de admisión.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Puedo convalidar materias de otra universidad?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        Sí, ADEN University permite la convalidación de materias cursadas en otras universidades reconocidas. Nuestro equipo académico evalúa tu historial para determinar qué créditos pueden ser transferidos, lo que puede reducir significativamente la duración de tu carrera.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Qué es la doble titulación (Dual Degree)?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        La doble titulación te otorga dos diplomas al completar un solo programa: uno emitido por ADEN University Panamá y otro por una institución aliada internacional. Esto amplía tu perfil profesional y te da reconocimiento académico en múltiples países sin cursar años adicionales.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Cuánto dura la carrera?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        Las licenciaturas tienen una duración de 3 años en formato trimestral acelerado. Si convalidas materias previas, puedes terminar en menos tiempo. El formato trimestral te permite avanzar más rápido que en universidades con calendarios semestrales tradicionales.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    ¿Qué diferencia a ADEN de otras universidades?
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <div class="accordion-body-inner">
+                        ADEN combina tres factores únicos: profesores que son ejecutivos activos en empresas reales (no solo académicos), una red de networking en 11 países con +30,000 egresados, y una metodología de "aprender haciendo" donde resuelves casos empresariales reales desde el primer trimestre.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 7 — CTA FINAL
+     ============================================ -->
+<section class="cta-final">
+    <div class="container">
+        <h2 class="fade-up">Da el Primer Paso Hoy</h2>
+        <p class="urgencia fade-up">Próximo inicio de clases: Mayo 2026 — Cupos limitados</p>
+
+        <div class="form-card fade-up">
+            <h3>Reserva Tu Cupo</h3>
+            <form id="lead-form-bottom" action="https://landings.aden.org/html2019/process/" method="POST">
+                <select name="programa" required>
+                    <option value="" disabled selected>Selecciona un programa</option>
+                    <optgroup label="Licenciaturas Online">
+                        <option value="Business Analytics">Business Analytics</option>
+                        <option value="Marketing y Comunicación Digital">Marketing y Comunicación Digital</option>
+                        <option value="Administración de Empresas">Administración de Empresas</option>
+                        <option value="Dirección de Finanzas">Dirección de Finanzas</option>
+                        <option value="Ingeniería Comercial">Ingeniería Comercial</option>
+                        <option value="Negocios Digitales">Negocios Digitales, Emprendimiento e Innovación</option>
+                        <option value="Logística y Comercio Internacional">Logística y Comercio Internacional</option>
+                        <option value="Recursos Humanos">Recursos Humanos</option>
+                        <option value="Contabilidad y Auditoría">Contabilidad y Auditoría</option>
+                    </optgroup>
+                    <optgroup label="Licenciaturas Presencial">
+                        <option value="Marketing y Comunicación Digital (Presencial)">Marketing y Comunicación Digital</option>
+                        <option value="Logística y Comercio Internacional (Presencial)">Logística y Comercio Internacional</option>
+                        <option value="Administración de Empresas (Presencial)">Administración de Empresas</option>
+                        <option value="Negocios Digitales (Presencial)">Negocios Digitales</option>
+                        <option value="Dirección de Finanzas (Presencial)">Dirección de Finanzas</option>
+                        <option value="Ingeniería Comercial (Presencial)">Ingeniería Comercial</option>
+                    </optgroup>
+                </select>
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="particular" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono (con código de país)" required>
+                <button type="submit" class="btn-cta">Reservar Mi Cupo Ahora</button>
+                <p class="privacy">Al enviar, aceptas nuestra <a href="https://adenuniversity.edu.pa/wp-content/uploads/Politica-de-privacidad-ADEN.pdf" target="_blank">Política de Privacidad</a>.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ZONA 8 — FOOTER MÍNIMO
+     ============================================ -->
+<footer class="footer">
+    <div class="container">
+        <img src="https://test-mkt-landings.adenuniversity.edu.pa/wp-content/uploads/aden-university-solo-footer-blanco.png"
+             alt="ADEN University" class="footer-logo">
+
+        <div class="footer-info">
+            <span>
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Torre de las Américas, Punta Pacífica, Panamá
+            </span>
+            <span>
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                +507 282-3222
+            </span>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://adenuniversity.edu.pa/wp-content/uploads/Politica-de-privacidad-ADEN.pdf" target="_blank">Política de Privacidad</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+    // Accordion toggle
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.parentElement;
+            const body = item.querySelector('.accordion-body');
+            const isActive = item.classList.contains('active');
+
+            // Close siblings
+            item.closest('.accordion').querySelectorAll('.accordion-item').forEach(sibling => {
+                sibling.classList.remove('active');
+                sibling.querySelector('.accordion-body').style.maxHeight = null;
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                body.style.maxHeight = body.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // Scroll fade-up animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
